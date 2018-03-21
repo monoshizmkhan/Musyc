@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/socialmenu_creatpost"
+        android:title="Create Post" />
+    <item
+        android:id="@+id/socialmenu_mymixtapes"
+        android:title="My Mixtapes" />
+    <item
+        android:id="@+id/socialmenu_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/socialmenu_acset"
+        android:title="Account Settings" />
+</menu>

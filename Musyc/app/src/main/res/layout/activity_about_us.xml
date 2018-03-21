@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.musyc.musyc.ActivitiesAndFragments.MainSettings.AboutUsActivity"
+    android:background="@color/Background_Color">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/logo_hd"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.146"
+        android:id="@+id/about_circleImageView2" />
+
+    <TextView
+        android:id="@+id/about_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUSYC"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/about_circleImageView2" />
+
+    <TextView
+        android:id="@+id/about_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="A Music Player and Social Network Application For Android OS.Created By Saad Mahmud And Monoshiz Mahbub Khan."
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/White_Color"
+        app:layout_constraintTop_toBottomOf="@+id/about_textView"
+        app:layout_constraintHorizontal_bias="0.375" />
+
+
+
+</android.support.constraint.ConstraintLayout>

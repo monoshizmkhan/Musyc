@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.musyc.musyc.ActivitiesAndFragments.MainSettings.ContectUsActivity"
+    android:orientation="vertical"
+    android:background="@color/Background_Color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Musyc"
+        android:textColor="@color/colorAccent"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="musyc@gmail.com"
+        android:textColor="@color/White_Color"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+
+</LinearLayout>

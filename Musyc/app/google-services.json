@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611840071792",
+    "firebase_url": "https://musyc-f264f.firebaseio.com",
+    "project_id": "musyc-f264f",
+    "storage_bucket": "musyc-f264f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611840071792:android:23f2a550bcafebca",
+        "android_client_info": {
+          "package_name": "com.inc.musyc.musyc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611840071792-7gu2mr0b458vqrvqc12nise1tf2960gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inc.musyc.musyc",
+            "certificate_hash": "84ed57582fb44455989044e6be512a1194618a95"
+          }
+        },
+        {
+          "client_id": "611840071792-n57tq8n8c5jttdri2eugr220jk59ghjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn2G2nyXFvFFzaLzRGv4tacxJcUPzsMSM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611840071792-n57tq8n8c5jttdri2eugr220jk59ghjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

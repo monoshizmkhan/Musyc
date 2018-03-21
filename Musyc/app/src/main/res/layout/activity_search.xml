@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inc.musyc.musyc.ActivitiesAndFragments.SocialHub.SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/Background_Color">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/search_toolbar" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColor="@color/White_Color"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/search_bt"/>
+
+</LinearLayout>

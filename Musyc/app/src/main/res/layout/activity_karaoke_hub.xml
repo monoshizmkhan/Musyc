@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Background_Color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monoshizjishnu.dbtester.KaraokeHub">
+
+
+    <ImageButton
+        android:layout_width="25sp"
+        android:layout_height="23sp"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        android:id="@+id/back"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Musyc Karaoke"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/back"
+        />
+
+    <VideoView
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/video"
+        android:keepScreenOn="true"
+        />
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/videoPreview"
+        android:src="@drawable/videopreview"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/videoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Song Name Here"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:maxLines="2"
+        android:layout_marginTop="380dp"
+        />
+
+    <ImageButton
+        android:layout_marginLeft="120dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/recordButton"
+        android:layout_below="@+id/videoName"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/record"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/stopRecordingButton"
+        android:layout_below="@+id/videoName"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/stop"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        />
+
+</RelativeLayout>

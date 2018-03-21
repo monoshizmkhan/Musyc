@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_Color"
+    tools:context="com.example.monoshizjishnu.dbtester.Player">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/plr_toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/plr_toolbar"
+        android:layout_marginBottom="4dp">
+        <Button
+            android:id="@+id/lib"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Library"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_marginRight="4dp"
+            />
+        <Button
+            android:id="@+id/menu"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Menu"
+            android:textColor="@color/White_Color"
+            />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/searchicon"
+        android:layout_width="20sp"
+        android:layout_height="45sp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/back"
+        android:src="@drawable/search"
+        android:scaleType="fitCenter"
+        android:backgroundTint ="#C8BFE7"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:hint="Search by song name"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_toLeftOf="@+id/searchicon"
+        android:backgroundTint ="@android:color/white"
+        android:layout_toRightOf="@+id/back"
+        android:maxLines="1"
+        android:maxLength="30"
+        />
+
+    <Button
+        android:id="@+id/feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blank"
+        android:layout_below="@+id/search"
+        />
+
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="255sp"
+        android:layout_height="255sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/album"
+        />
+
+
+
+    <TextView
+        android:id="@+id/songname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/preview"
+        android:maxLines="3"
+        />
+    <TextView
+        android:id="@+id/artistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/songname"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/timegone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:text="0:00"
+        android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbar"
+        android:text="0:00"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistname"
+        android:layout_alignParentLeft="true"
+        android:progress="0"
+        android:thumbTint="@android:color/white"
+        android:progressTint="@android:color/darker_gray"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/playbutton"
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+        android:layout_below="@+id/seekbar"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/stopbutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/stop"
+        android:layout_below="@+id/seekbar"
+        android:layout_toRightOf="@+id/forwardbutton"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blank2"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageButton
+        android:id="@+id/forwardbutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/next"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/playbutton"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/prevbutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/prev"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/playbutton"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/shufflebutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/shuffle"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/prevbutton"
+        android:background="@drawable/border"
+        />
+    <ImageButton
+        android:id="@+id/repeatbutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/repeat"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/shufflebutton"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/loopbutton"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/loop"
+        android:layout_below="@+id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/stopbutton"
+        android:background="@drawable/border"
+        />
+
+</RelativeLayout>

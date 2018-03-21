@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#EF5350</color>
+
+    <color name="App_Bar_Color">#212121</color>
+    <color name="Background_Color">#303030</color>
+    <color name="Cards_Color">#424242</color>
+    <color name="Button_Color">#42A5F5</color>
+    <color name="White_Color">#FFFFFF</color>
+    <color name="av_color1">#f7b09e</color>
+    <color name="av_color2">#f0979b</color>
+    <color name="av_color3">#e36a97</color>
+    <color name="av_color4">#bc428b</color>
+    <color name="av_color_bg">#8f367c</color>
+    <array name="av_colors">
+        <item>@color/av_color4</item>
+        <item>@color/av_color3</item>
+        <item>@color/av_color2</item>
+        <item>@color/av_color1</item>
+    </array>
+
+</resources>

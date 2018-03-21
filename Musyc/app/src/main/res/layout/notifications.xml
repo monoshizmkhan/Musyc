@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/black"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/album"
+        android:id="@+id/notifcover"
+        />
+
+    <TextView
+        android:id="@+id/notifTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/notifcover"
+        android:textColor="@android:color/white"
+        android:text="Song Name"
+        android:textSize="18dp"
+        android:maxLines="2"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/blanknotif"
+        android:layout_below="@+id/notifTitle"
+        />
+
+    <ImageButton
+        android:id="@+id/prevnotif"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/prev"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        android:layout_below="@+id/blanknotif"
+        android:layout_toRightOf="@+id/notifcover"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/blankbutton"
+        android:layout_toRightOf="@+id/prevnotif"
+        />
+
+    <ImageButton
+        android:id="@+id/playnotif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/pause"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        android:layout_below="@+id/blanknotif"
+        android:layout_toRightOf="@+id/blankbutton"
+        />
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/blankbutton2"
+        android:layout_toRightOf="@+id/playnotif"
+        />
+    <ImageButton
+        android:id="@+id/nextnotif"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/next"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        android:layout_below="@+id/blanknotif"
+        android:layout_toRightOf="@+id/blankbutton2"
+        />
+
+
+</RelativeLayout>

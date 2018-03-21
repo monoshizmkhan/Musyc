@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_Color"
+    tools:context="com.example.monoshizjishnu.dbtester.VideosViewer">
+
+
+    <ImageButton
+        android:layout_width="25sp"
+        android:layout_height="23sp"
+        android:src="@drawable/back"
+        android:scaleType="fitCenter"
+        android:background="@drawable/border"
+        android:id="@+id/back"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Choose a video file"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/back"
+        />
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="7dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarDefaultDelayBeforeFade="@android:integer/config_shortAnimTime"
+        android:scrollbarTrackVertical="@android:color/black"
+        android:id="@+id/videolist"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        >
+
+    </ListView>
+
+</RelativeLayout>
